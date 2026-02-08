@@ -1,59 +1,97 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Arries MY — Music & Jingle</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>AMY Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="overlay"></div>
 
-  <header>
-    <h1>Arries MY</h1>
-    <p class="tagline">Jingle • Lagu • Aransemen • Scoring</p>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">AMY Studio</div>
+  <ul class="nav-links">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#porto">Porto</a></li>
+    <li><a href="#contact" class="btn">Pesan Sekarang</a></li>
+  </ul>
+</nav>
 
-  <section class="profile">
-    <img src="Images/51.jpg" alt="Profile Photo">
-    <div>
-      <h2>Profile</h2>
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <h1>Kami menyediakan<br><span>layanan pembuatan musik</span></h1>
+    <p>dengan berbagai genre</p>
+    <a href="#contact" class="btn-primary">Pesan Sekarang</a>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="profile" id="profile">
+  <h2>AMY Studio</h2>
+  <p class="subtitle">Music Composer & Production</p>
+
+  <div class="profile-grid">
+    <div class="profile-card">
+      <img src="Images/51.jpg" alt="Arries MY">
+      <h3>Arries MY</h3>
       <p>
-        Saya composer dan arranger yang fokus pada jingle brand, lagu tematik,
-        dan musik untuk kebutuhan visual maupun personal.
-        Pendekatan saya selalu berangkat dari kebutuhan klien, bukan ego musikal.
+        Composer dan arranger yang fokus pada jingle,
+        scoring, dan lagu tematik sesuai kebutuhan klien.
       </p>
     </div>
-  </section>
 
-  <section class="portfolio">
-    <h2>Portfolio</h2>
+    <div class="profile-card">
+      <img src="images/profile2.jpg" alt="Musisi">
+      <h3>Musisi</h3>
+      <p>
+        Tim musisi profesional dengan pendekatan musikal
+        yang fleksibel dan modern.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <div class="track">
-      <p>Brand Jingle — Energetic Pop</p>
-      <audio controls src="Audio/porto1.mp3"></audio>
+<!-- PORTFOLIO -->
+<section class="portfolio" id="porto">
+  <h2>Popular Music</h2>
+
+  <div class="audio-list">
+    <div class="audio-item">
+      <h4>Scoring</h4>
+      <audio controls src="audio/scoring.mp3"></audio>
     </div>
 
-    <div class="track">
-      <p>Lagu Tema — Acoustic Warm</p>
-      <audio controls src="Audio/porto2.mp3"></audio>
+    <div class="audio-item">
+      <h4>Jingle</h4>
+      <audio controls src="audio/jingle.mp3"></audio>
     </div>
 
-    <div class="track">
-      <p>Background Music — Cinematic</p>
-      <audio controls src="Audio/porto3.mp3"></audio>
-    </div>
-
-    <div class="track">
-      <p>Commercial Song — Modern</p>
+    <div class="audio-item">
+      <h4>Single / Album</h4>
       <audio controls src="Audio/Alinda.mp3"></audio>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>Contact: arries.my@email.com | Instagram: @arries.myf</p>
-  </footer>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Pesan Sekarang</h2>
+  <p>Hubungi kami untuk kebutuhan musik Anda</p>
+
+  <a href="https://wa.me/628xxxxxxxxxx" class="btn-primary">
+    Hubungi via WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 AMY Studio</p>
+</footer>
+
 </body>
 </html>
 
