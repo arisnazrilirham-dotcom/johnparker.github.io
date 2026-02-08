@@ -2,87 +2,140 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier New", monospace;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  background: url("51.jpg") center/cover no-repeat;
-  color: #ffffff;
-  position: relative;
+  background: #f9faf7;
+  color: #222;
+  line-height: 1.6;
 }
 
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: -1;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #1f4f3a;
 }
 
-header {
-  text-align: center;
-  padding: 80px 20px 40px;
+.logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
 }
 
-header h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-}
-
-.tagline {
-  margin-top: 10px;
-  font-size: 1rem;
-  opacity: 0.85;
-}
-
-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.profile {
+.nav-links {
   display: flex;
   gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background: #f39c12;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url("images/hero.jpg") center/cover;
+  height: 90vh;
+  display: flex;
   align-items: center;
+  padding: 0 60px;
 }
 
-.profile img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 100%;
-  border: 2px solid #fff;
+.hero-content {
+  color: #fff;
+  max-width: 600px;
 }
 
-.profile h2,
-.portfolio h2 {
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero span {
+  color: #f39c12;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  background: #f39c12;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PROFILE */
+.profile {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 40px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.profile-card img {
+  width: 120px;
+  border-radius: 50%;
   margin-bottom: 15px;
-  font-size: 1.5rem;
 }
 
-.profile p {
-  line-height: 1.6;
-  opacity: 0.9;
+/* PORTFOLIO */
+.portfolio {
+  background: #eaf3ed;
+  padding: 80px 60px;
 }
 
-.portfolio .track {
-  margin-bottom: 25px;
+.audio-list {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.portfolio p {
-  margin-bottom: 8px;
-  font-size: 0.95rem;
+.audio-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
 }
 
-audio {
-  width: 100%;
+/* CONTACT */
+.contact {
+  padding: 80px 60px;
+  text-align: center;
 }
 
 footer {
+  background: #1f4f3a;
+  color: #fff;
   text-align: center;
-  padding: 30px 20px;
-  font-size: 0.85rem;
-  opacity: 0.7;
+  padding: 20px;
 }
-
