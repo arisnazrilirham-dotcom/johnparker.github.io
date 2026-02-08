@@ -2,36 +2,57 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Nama Kamu — Composer & Music Producer</title>
+  <title>John Parker — Music & Jingle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="overlay"></div>
 
   <header>
-    <h1>Nama Kamu</h1>
-    <p>Composer & Music Producer</p>
-    <p>Jingle • Lagu • Aransemen</p>
+    <h1>John Parker</h1>
+    <p class="tagline">Jingle • Lagu • Aransemen • Scoring</p>
   </header>
 
-  <section>
-    <h2>Profil</h2>
-    <p>Saya composer dan music producer yang fokus membuat musik untuk kebutuhan brand, konten, dan proyek kreatif.</p>
+  <section class="profile">
+    <img src="Images/profile.jpg" alt="Profile Photo">
+    <div>
+      <h2>Profile</h2>
+      <p>
+        Saya composer dan arranger yang fokus pada jingle brand, lagu tematik,
+        dan musik untuk kebutuhan visual maupun personal.
+        Pendekatan saya selalu berangkat dari kebutuhan klien, bukan ego musikal.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>Portofolio</h2>
+  <section class="portfolio">
+    <h2>Portfolio</h2>
 
-    <p><strong>Jingle Brand</strong></p>
-    <audio controls>
-      <source src="audio/jingle-sample.mp3" type="audio/mpeg">
-    </audio>
+    <div class="track">
+      <p>Brand Jingle — Energetic Pop</p>
+      <audio controls src="Audio/porto1.mp3"></audio>
+    </div>
 
+    <div class="track">
+      <p>Lagu Tema — Acoustic Warm</p>
+      <audio controls src="Audio/porto2.mp3"></audio>
+    </div>
+
+    <div class="track">
+      <p>Background Music — Cinematic</p>
+      <audio controls src="Audio/porto3.mp3"></audio>
+    </div>
+
+    <div class="track">
+      <p>Commercial Scoring — Modern</p>
+      <audio controls src="Audio/porto4.mp3"></audio>
+    </div>
   </section>
 
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: namakamu@email.com</p>
-  </section>
-
+  <footer>
+    <p>Contact: johnparker@email.com | Instagram: @johnparker</p>
+  </footer>
 </body>
 </html>
